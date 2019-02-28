@@ -1,0 +1,53 @@
+[
+    {
+        "id": 0,
+        "name": "Default List 1",
+        "n_songs": 2,
+        "duration": 4,
+        "songs": [
+            {
+                "id": 10,
+                "name": "Nunca Es Suficiente",
+                "author": "Natalia Lafourcade",
+                "genre": "Pop Rock",
+                "duration": 2
+            },
+            {
+                "id": 11,
+                "name": "Rosas",
+                "author": "La Oreja De Van Gogh",
+                "genre": "Pop Rock",
+                "duration": 2
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Default List 2",
+        "n_songs": 3,
+        "duration": 9,
+        "songs": [
+            {
+                "id": 7,
+                "name": "changes",
+                "author": "XXXTENTACION",
+                "genre": "Hip Hop/Rap",
+                "duration": 2
+            },
+            {
+                "id": 8,
+                "name": "Lost On You",
+                "author": "LP",
+                "genre": "Pop Rock",
+                "duration": 2
+            },
+            {
+                "id": 9,
+                "name": "Chlorine",
+                "author": "Twenty One Pilots",
+                "genre": "Pop Rock",
+                "duration": 5
+            }
+        ]
+    }
+]

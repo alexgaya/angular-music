@@ -1,0 +1,19 @@
+<div *ngIf="selectedList" class="card">
+  <div class="card-body">
+    <div class="d-flex justify-content-between">
+      <h5 class="card-title">{{selectedList.name}}</h5>
+      <button (click)="removeList()" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+    </div>
+    <h6 class="card-subtitle mt-3 mb-2 text-muted">Total Duration: {{ selectedList.duration }} min</h6>
+    <h6 class="card-subtitle mt-3 mb-2 text-muted">Total songs: {{ selectedList.n_songs }}</h6>
+    <ul class="list-group">
+      <div *ngFor="let song of selectedList.songs" class="d-flex justify-content-between">
+        <li class="list-group-item">
+          <span class="font-weight-bold">{{ song.name }}</span>
+          <span class="text-muted ml-4">{{ song.author }}</span>
+        </li>
+        <button (click)="removeSong(song)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+      </div>
+    </ul>
+  </div>
+</div>

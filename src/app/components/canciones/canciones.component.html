@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">All Songs</h5>
+    <!--div class="card-subtitle mt-3 mb-2 text-muted d-flex">
+      <p>Order By:</p>
+      <select class="custom-select">
+        <option value=""></option>
+        <option value="">ID</option>
+        <option value="">Name</option>
+      </select>
+    </div-->
+    <ul class="list-group">
+      <div *ngFor="let song of songs | slice:0:maxLen" class="d-flex justify-content-between songs">
+        <li class="list-group-item"><span class="font-weight-bold">{{ song.name }}</span> <span class="text-muted ml-4">{{
+            song.author }}</span></li>
+        <button *ngIf="selectedList" (click)="addSong(song)" class="btn align-self-center m-0 btn-success"><i class="fas fa-plus"></i></button>
+      </div>
+      <button type="button" class="btn btn-primary mt-3" (click)="showMoreSongs()">SHOW MORE</button>
+    </ul>
+  </div>
+</div>

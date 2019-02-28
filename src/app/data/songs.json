@@ -1,0 +1,86 @@
+[
+    {
+        "id": 0,
+        "name": "Shallow (feat. Bradley Cooper)",
+        "author": "Lady Gaga",
+        "genre": "Pop",
+        "duration": 2
+    },
+    {
+        "id": 1,
+        "name": "Calma (Remix) (part. Farruko)",
+        "author": "Pedro Capo",
+        "genre": "Pop",
+        "duration": 4
+    },
+    {
+        "id": 2,
+        "name": "Perfect",
+        "author": "Ed Sheeran",
+        "genre": "Pop",
+        "duration": 3
+    },
+    {
+        "id": 3,
+        "name": "7 rings",
+        "author": "Ariana Grande",
+        "genre": "Pop",
+        "duration": 2
+    },
+    {
+        "id": 4,
+        "name": "Girls Like You (feat. Maroon 5)",
+        "author": "Cardi B",
+        "genre": "Hip Hop/Rap",
+        "duration": 2
+    },
+    {
+        "id": 5,
+        "name": "Star Shopping",
+        "author": "LiL PEEP",
+        "genre": "Hip Hop/Rap",
+        "duration": 2
+    },
+    {
+        "id": 6,
+        "name": "BEBE (part. Anuel AA)",
+        "author": "6ix9ine",
+        "genre": "Hip Hop/Rap",
+        "duration": 3
+    },
+    {
+        "id": 7,
+        "name": "changes",
+        "author": "XXXTENTACION",
+        "genre": "Hip Hop/Rap",
+        "duration": 2
+    },
+    {
+        "id": 8,
+        "name": "Lost On You",
+        "author": "LP",
+        "genre": "Pop Rock",
+        "duration": 2
+    },
+    {
+        "id": 9,
+        "name": "Chlorine",
+        "author": "Twenty One Pilots",
+        "genre": "Pop Rock",
+        "duration": 5
+    },
+    {
+        "id": 10,
+        "name": "Nunca Es Suficiente",
+        "author": "Natalia Lafourcade",
+        "genre": "Pop Rock",
+        "duration": 2
+    },
+    {
+        "id": 11,
+        "name": "Rosas",
+        "author": "La Oreja De Van Gogh",
+        "genre": "Pop Rock",
+        "duration": 2
+    }
+]
