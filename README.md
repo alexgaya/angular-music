@@ -4,14 +4,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Requirements
 
-- [x] Songs
-- [x] Lists
-- [x] Add List
-- [x] Add Song to List
-- [x] Delete List
-- [x] Delete Song from List
-- [x] Show more Songs
-- [ ] Order By/Sort Songs (Custom pipe needed)
+👍 Songs
+👍 Lists
+👍 Add List
+👍 Add Song to List
+👍 Delete List
+👍 Delete Song from List
+👍 Show more Songs
+❌ Order By/Sort Songs (Custom pipe needed)
 
 
 ## Doc
