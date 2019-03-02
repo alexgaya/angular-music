@@ -16,7 +16,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Doc
 
-Please, take in mind that the page is not responsive
+Please, take in mind that the page is not responsive 🤷‍
 
 ### Add New List
 
