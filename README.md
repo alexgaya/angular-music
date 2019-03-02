@@ -21,6 +21,6 @@ Write your new name's list, click on the button "ADD" or press ENTER
 
 ## Choose List
 
-![Choose List Select](screenshots/ang-music-2.png)  
+![Choose List Select](screenshots/ang-music-2.PNG)  
 
 Click on the select and choose the list you want to see  
