@@ -13,13 +13,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [x] Show more Songs
 - [ ] Order By/Sort Songs (Custom pipe needed)
 
-## Add New List
 
-![New List Input](https://github.com/alexgaya/angular-music/blob/master/screenshots/ang-music-1.PNG)  
+## Doc
+
+Please, take in mind that the page is not responsive
+
+### Add New List
+
+![New List Input](screenshots/ang-music-1.PNG)  
 
 Write your new name's list, click on the button "ADD" or press ENTER  
 
-## Choose List
+### Choose List
 
 ![Choose List Select](screenshots/ang-music-2.PNG)  
 
