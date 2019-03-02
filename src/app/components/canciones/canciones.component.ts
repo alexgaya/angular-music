@@ -30,14 +30,25 @@ export class CancionesComponent implements OnInit, DoCheck {
     this.selectedList = this.listService.getSelectedList();
   }
 
+  public checkSongInSelectedList(song: Song): boolean {
+    let songInList: boolean = false;
+    this.selectedList.songs.forEach(s => {
+      if(s.id == song.id){
+        songInList = true;
+      }
+    });
+    return songInList;
+  }
+
   public showMoreSongs(): void {
     if (this.maxLen < this.songs.length)
       this.maxLen += 5;
-    console.log(this.maxLen);
+    //console.log(this.maxLen);
   }
 
   public addSong(song: Song): void{
     if(this.selectedList){
+      //console.log(this.selectedList);
       this.listService.addSong(this.selectedList, song);
     }
   }

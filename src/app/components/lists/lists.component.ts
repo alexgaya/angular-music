@@ -12,6 +12,7 @@ import { Song } from 'src/app/models/songs';
 export class ListsComponent implements OnInit, DoCheck {
 
   public selectedList: List;
+  public moreInfoSong: boolean = false;
 
   constructor(private listService: ListService) { }
 
@@ -30,9 +31,10 @@ export class ListsComponent implements OnInit, DoCheck {
   }
 
   public removeList(): void {
-    if(this.selectedList == this.listService.getSelectedList()){
-      confirm(`Are you sure that you want to delete the list "${this.selectedList.name}"`);
-      this.listService.removeList();
+    if (this.selectedList == this.listService.getSelectedList()) {
+      if (confirm(`Are you sure that you want to delete the list "${this.selectedList.name}"`)) {
+        this.listService.removeList();
+      }
     }
   }
 

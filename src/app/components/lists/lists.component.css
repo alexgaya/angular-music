@@ -1,0 +1,6 @@
+.list-group-item :first-child {
+    margin-right: 0 !important;
+}
+.card-title{
+    color: #3f51b5!important;
+}

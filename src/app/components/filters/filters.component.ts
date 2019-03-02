@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { ListService } from '../../services/list.service';
 import { List } from '../../models/list';
-import { ListsComponent } from '../lists/lists.component';
 
 @Component({
   selector: 'app-filters',
@@ -23,7 +22,7 @@ export class FiltersComponent implements OnInit {
   ngOnInit() {
     //console.log(this.listService.getLists());
     this.lists = this.listService.getLists();
-    console.log(this.lists);
+    //console.log(this.lists);
   }
 
   public setSelectedList(): void {
@@ -44,7 +43,7 @@ export class FiltersComponent implements OnInit {
   }
 
   public addNewList(): void {
-    console.log(this.newList);
+    //console.log(this.newList);
     if (this.newList && !this.checkIfNewListExists()) {
       this.error = '';
       const id = this.lists.length > 0 ? Math.max(...this.lists.map(l => l.id)) + 1 : 0;
@@ -55,6 +54,8 @@ export class FiltersComponent implements OnInit {
         duration: 0,
         songs: []
       });
+      this.selected = Math.max(...this.lists.map(l => l.id));
+      this.setSelectedList();
       this.newList = '';
       document.getElementById('newList').focus();
     }

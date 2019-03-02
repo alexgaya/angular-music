@@ -72,7 +72,7 @@ export class ListService {
     this.lists.forEach(l => {
       if (l == list) {
         l.songs.forEach(s => {
-          if (song == s) {
+          if (song.id == s.id) {
             alreadyExists = true;
           }
         });
