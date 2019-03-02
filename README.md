@@ -15,7 +15,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Add New List
 
-![New List Input](screenshots/ang-music-1.png)  
+![New List Input](https://github.com/alexgaya/angular-music/blob/master/screenshots/ang-music-1.PNG)  
 
 Write your new name's list, click on the button "ADD" or press ENTER  
 
