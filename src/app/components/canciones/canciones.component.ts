@@ -33,7 +33,7 @@ export class CancionesComponent implements OnInit, DoCheck {
   public checkSongInSelectedList(song: Song): boolean {
     let songInList: boolean = false;
     this.selectedList.songs.forEach(s => {
-      if(s.id == song.id){
+      if (s.id == song.id) {
         songInList = true;
       }
     });
@@ -43,12 +43,14 @@ export class CancionesComponent implements OnInit, DoCheck {
   public showMoreSongs(): void {
     if (this.maxLen < this.songs.length)
       this.maxLen += 5;
-    //console.log(this.maxLen);
   }
 
-  public addSong(song: Song): void{
-    if(this.selectedList){
-      //console.log(this.selectedList);
+  public showLessSongs(): void {
+    this.maxLen = 5;
+  }
+
+  public addSong(song: Song): void {
+    if (this.selectedList) {
       this.listService.addSong(this.selectedList, song);
     }
   }

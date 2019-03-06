@@ -8,6 +8,7 @@
         <button *ngIf="selectedList && !checkSongInSelectedList(song)" (click)="addSong(song)" class="btn align-self-center m-0 btn-success"><i class="fas fa-plus"></i></button>
       </div>
       <button *ngIf="maxLen < songs.length" type="button" class="btn btn-primary mt-3" (click)="showMoreSongs()">SHOW MORE</button>
+      <button *ngIf="maxLen >= songs.length" type="button" class="btn btn-primary mt-3" (click)="showLessSongs()">SHOW LESS</button>
     </ul>
   </div>
 </div>
