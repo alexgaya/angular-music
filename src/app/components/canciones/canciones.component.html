@@ -1,6 +1,10 @@
-<div class="card mb-2">
+<div class="card">
   <div class="card-body">
-    <h5 class="card-title">All Songs</h5>
+    <div class="d-flex justify-content-between">
+        <h5 class="card-title">All Songs</h5>
+        <button *ngIf="selectedList && songs.length > selectedList.songs.length" (click)="addAllSongs()" type="button" class="btn btn-primary">ADD ALL SONGS</button>
+    </div>
+    
     <ul class="list-group">
       <div *ngFor="let song of songs | slice:0:maxLen" class="d-flex justify-content-between songs">
         <li class="list-group-item"><span class="font-weight-bold">{{ song.name }}</span> <span class="text-muted ml-4">{{

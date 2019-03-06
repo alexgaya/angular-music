@@ -55,4 +55,11 @@ export class CancionesComponent implements OnInit, DoCheck {
     }
   }
 
+  public addAllSongs(): void {
+    if (this.selectedList) {
+      this.songs.forEach(s => {
+        this.listService.addSong(this.selectedList, s);
+      });
+    }
+  }
 }
