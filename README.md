@@ -12,6 +12,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 👍 Delete Song from List  
 👍 Show more Songs  
 ❌ Order By/Sort Songs (Custom pipe needed)  
+❌ Getting data from server
 
 
 ## Doc
