@@ -30,7 +30,7 @@ export class ListService {
 
   public removeList(): void {
     this.lists.forEach((l, index) => {
-      if(l == this.selectedList){
+      if (l == this.selectedList) {
         this.lists.splice(index, 1);
       }
     });
@@ -53,23 +53,40 @@ export class ListService {
   }
 
   public removeSong(list: List, song: Song) {
-    this.lists.forEach((l, lIndex) => {
-      if (l == list) {
-        l.songs.forEach((s, Sindex) => {
-          if (s == song) {
-            l.songs.splice(Sindex, 1);
-            this.updateNsongs(lIndex);
-            this.updateDuration(lIndex);
+    // this.lists.forEach((l, lIndex) => {
+    //   if (l == list) {
+    //     l.songs.forEach((s, Sindex) => {
+    //       if (s == song) {
+    //         l.songs.splice(Sindex, 1);
+    //         this.updateNsongs(lIndex);
+    //         this.updateDuration(lIndex);
+    //       }
+    //     })
+    //   }
+    // });
+    let i = 0;
+    let j = 0;
+    let removed = false;
+    while (!removed && i < this.lists.length) {
+      if (this.lists[i] == list) {
+        while (!removed && j < this.lists[i].songs.length) {
+          if (this.lists[i].songs[j] == song) {
+            this.lists[i].songs.splice(j, 1);
+            this.updateNsongs(i);
+            this.updateDuration(i);
+            removed = true;
           }
-        })
+          j++;
+        }
       }
-    });
+      i++;
+    }
   }
 
-  public addSong(list: List, song: Song): void {
+  private checkIfSongsAlreadyExists(list: List, song: Song): boolean {
     let alreadyExists: boolean = false;
 
-    this.lists.forEach(l => {
+    /*this.lists.forEach(l => {
       if (l == list) {
         l.songs.forEach(s => {
           if (song.id == s.id) {
@@ -77,16 +94,46 @@ export class ListService {
           }
         });
       }
-    });
+    });*/
 
-    if (!alreadyExists) {
-      this.lists.forEach((e, index) => {
-        if (e == list) {
-          e.songs.push(song);
-          this.updateNsongs(index);
-          this.updateDuration(index);
+    let i = 0;
+    let j = 0;
+    while (!alreadyExists && i < this.lists.length) {
+      if (this.lists[i] == list) {
+        while (!alreadyExists && j < this.lists[i].songs.length) {
+          if (song.id == this.lists[i].songs[j].id) {
+            alreadyExists = true;
+          }
+          j++;
         }
-      });
+      }
+      i++;
+    }
+    return alreadyExists;
+  }
+
+  public addSong(list: List, song: Song): void {
+
+
+    if (!this.checkIfSongsAlreadyExists(list, song)) {
+      // this.lists.forEach((e, index) => {
+      //   if (e == list) {
+      //     e.songs.push(song);
+      //     this.updateNsongs(index);
+      //     this.updateDuration(index);
+      //   }
+      // });
+      let added = false;
+      let i = 0;
+      while (!added && i < this.lists.length) {
+        if (this.lists[i].id == list.id) {
+          this.lists[i].songs.push(song);
+          this.updateNsongs(i);
+          this.updateDuration(i);
+          added = true;
+        }
+        i++;
+      }
     }
   }
 }
