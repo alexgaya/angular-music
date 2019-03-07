@@ -14,6 +14,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ❌ Order By/Sort Songs (Custom pipe needed)  
 ❌ Getting data from server
 
+## Run  
+
+> npm i -g live-server
+> cd ./dist/angular-music
+> live-server
+
 
 ## Doc
 
