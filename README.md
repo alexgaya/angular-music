@@ -16,8 +16,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Run  
 
-> npm i -g live-server
-> cd ./dist/angular-music
+> npm i -g live-server  
+> cd ./dist/angular-music  
 > live-server
 
 
